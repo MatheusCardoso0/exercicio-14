@@ -1,0 +1,21 @@
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+td#poster {
+    text-decoration: underline;
+    cursor: pointer;
+}
