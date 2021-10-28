@@ -1,0 +1,32 @@
+<ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="lista-filmes">Filmes</a></li>
+</ul>
+
+<div style="margin-top: 30px;"></div>
+
+<div id="detalhe" class="row d-flex justify-content-center">
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Diretor</th>
+            <th scope="col">Gênero</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Poster</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of filmes.filme">
+            <td> {{ u.nome }} </td>
+            <td> {{ u.ano }}</td>
+            <td> {{ u.diretor }} </td>
+            <td> {{ u.genero }}</td>
+            <td> {{ u.descricao }} </td>
+            <td id="poster" (click)="selecionarFilme(u.poster)"> {{ u.poster }}</td>
+        </tr>
+
+    </tbody>
+</table>
+</div>
